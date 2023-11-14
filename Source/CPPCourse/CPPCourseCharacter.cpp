@@ -117,6 +117,7 @@ void ACPPCourseCharacter::TurnAtRate(const float Rate)
 void ACPPCourseCharacter::LookUpAtRate(const float Rate)
 {
 	// calculate delta for this frame from the rate information
+	check(GetWorld());
 	AddControllerPitchInput(
 		Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
 }
