@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\CPPCourse.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F44A3724-E3CB-44B0-85FF-A5C3979F7CDA}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\CPPCourse.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\CPPCourseEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.clang-format" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{0C752212-F36B-4E86-804A-743903C7DAA1}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\CPPCourse">
+      <UniqueIdentifier>{0B1C5252-507E-4D30-AC2D-98EA284D14BF}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\CPPCourse\CPPCourse.Build.cs">
+      <Filter>Source\CPPCourse</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\CPPCourse\CPPCourse.cpp">
+      <Filter>Source\CPPCourse</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CPPCourse\CPPCourse.h">
+      <Filter>Source\CPPCourse</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CPPCourse\CPPCourseCharacter.cpp">
+      <Filter>Source\CPPCourse</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CPPCourse\CPPCourseCharacter.h">
+      <Filter>Source\CPPCourse</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CPPCourse\CPPCourseGameMode.cpp">
+      <Filter>Source\CPPCourse</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CPPCourse\CPPCourseGameMode.h">
+      <Filter>Source\CPPCourse</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

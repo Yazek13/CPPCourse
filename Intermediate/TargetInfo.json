@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "CPPCourse",
+			"Path": "C:\\UE\\CPPCourse\\Source\\CPPCourse.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "CPPCourseEditor",
+			"Path": "C:\\UE\\CPPCourse\\Source\\CPPCourseEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

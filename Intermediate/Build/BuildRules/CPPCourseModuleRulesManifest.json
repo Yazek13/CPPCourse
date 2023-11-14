@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\UE\\CPPCourse\\Source\\CPPCourse\\CPPCourse.Build.cs",
+		"C:\\UE\\CPPCourse\\Source\\CPPCourse.Target.cs",
+		"C:\\UE\\CPPCourse\\Source\\CPPCourseEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}
