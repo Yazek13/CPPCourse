@@ -32,8 +32,10 @@
 /wd4244
 /wd4838
 /I .
+/I C:\UE\CPPCourse\Source\CPPCourse\Private
 /I C:\UE\CPPCourse\Intermediate\Build\Win64\UE4Editor\Inc\CPPCourse
 /I C:\UE\CPPCourse\Source
+/I C:\UE\CPPCourse\Source\CPPCourse\Public
 /I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public

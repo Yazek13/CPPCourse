@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "CPPCourseCharacter.h"
+#include "CourseCharacter.h"
 #include "HeadMountedDisplayFunctionLibrary.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -9,7 +9,7 @@
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
 
-ACPPCourseCharacter::ACPPCourseCharacter()
+ACourseCharacter::ACourseCharacter()
 {
 	// Set size for collision capsule
 	check(GetCapsuleComponent());
@@ -52,7 +52,7 @@ ACPPCourseCharacter::ACPPCourseCharacter()
 }
 
 
-void ACPPCourseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+void ACourseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	// Set up gameplay key bindings
 	check(PlayerInputComponent);
@@ -62,9 +62,9 @@ void ACPPCourseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInput
 		"Jump", IE_Released, this, &ACharacter::StopJumping);
 
 	PlayerInputComponent->BindAxis(
-		"MoveForward", this, &ACPPCourseCharacter::MoveForward);
+		"MoveForward", this, &ACourseCharacter::MoveForward);
 	PlayerInputComponent->BindAxis(
-		"MoveRight", this, &ACPPCourseCharacter::MoveRight);
+		"MoveRight", this, &ACourseCharacter::MoveRight);
 
 	// We have 2 versions of the rotation bindings to handle different kinds of
 	// devices differently "turn" handles devices that provide an absolute
@@ -72,25 +72,25 @@ void ACPPCourseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInput
 	// as a rate of change, such as an analog joystick
 	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
 	PlayerInputComponent->BindAxis(
-		"TurnRate", this, &ACPPCourseCharacter::TurnAtRate);
+		"TurnRate", this, &ACourseCharacter::TurnAtRate);
 	PlayerInputComponent->BindAxis(
 		"LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis(
-		"LookUpRate", this, &ACPPCourseCharacter::LookUpAtRate);
+		"LookUpRate", this, &ACourseCharacter::LookUpAtRate);
 
 	// handle touch devices
 	PlayerInputComponent->BindTouch(
-		IE_Pressed, this, &ACPPCourseCharacter::TouchStarted);
+		IE_Pressed, this, &ACourseCharacter::TouchStarted);
 	PlayerInputComponent->BindTouch(
-		IE_Released, this, &ACPPCourseCharacter::TouchStopped);
+		IE_Released, this, &ACourseCharacter::TouchStopped);
 }
 
-void ACPPCourseCharacter::MoveForward(const float Value)
+void ACourseCharacter::MoveForward(const float Value)
 {
 	Move(EAxis::X, Value);
 }
 
-void ACPPCourseCharacter::Move(const EAxis::Type& Axis, const float Value) 
+void ACourseCharacter::Move(const EAxis::Type& Axis, const float Value) 
 {
 	if (Controller && (Value != 0.0f))
 	{
@@ -102,32 +102,32 @@ void ACPPCourseCharacter::Move(const EAxis::Type& Axis, const float Value)
 	}
 }
 
-void ACPPCourseCharacter::MoveRight(const float Value)
+void ACourseCharacter::MoveRight(const float Value)
 {
 	Move(EAxis::Y, Value);
 }
 
-void ACPPCourseCharacter::TurnAtRate(const float Rate)
+void ACourseCharacter::TurnAtRate(const float Rate)
 {
 	// calculate delta for this frame from the rate information
 	check(GetWorld());
 	AddControllerYawInput(Rate * BaseTurnRate * GetWorld()->GetDeltaSeconds());
 }
 
-void ACPPCourseCharacter::LookUpAtRate(const float Rate)
+void ACourseCharacter::LookUpAtRate(const float Rate)
 {
 	// calculate delta for this frame from the rate information
 	check(GetWorld());
 	AddControllerPitchInput(
 		Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
 }
-void ACPPCourseCharacter::TouchStarted(
+void ACourseCharacter::TouchStarted(
 	ETouchIndex::Type FingerIndex, FVector Location)
 {
 	Jump();
 }
 
-void ACPPCourseCharacter::TouchStopped(
+void ACourseCharacter::TouchStopped(
 	ETouchIndex::Type FingerIndex, FVector Location)
 {
 	StopJumping();

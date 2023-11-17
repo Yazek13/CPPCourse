@@ -4,13 +4,13 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
-#include "CPPCourseGameMode.generated.h"
+#include "CourseGameMode.generated.h"
 
 UCLASS(minimalapi)
-class ACPPCourseGameMode : public AGameModeBase
+class ACourseGameMode : public AGameModeBase
 {
 	GENERATED_BODY()
 
 public:
-	ACPPCourseGameMode();
+	ACourseGameMode();
 };

@@ -4,19 +4,19 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
-#include "CPPCourseCharacter.generated.h"
+#include "CourseCharacter.generated.h"
 
 class USpringArmComponent;
 class UCameraComponent;
 class UInputComponent;
 
 UCLASS()
-class ACPPCourseCharacter : public ACharacter
+class ACourseCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
 public:
-	ACPPCourseCharacter();
+	ACourseCharacter();
 
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)

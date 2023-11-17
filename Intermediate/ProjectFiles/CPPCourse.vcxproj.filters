@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\CPPCourse.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{F44A3724-E3CB-44B0-85FF-A5C3979F7CDA}</UniqueIdentifier>
+      <UniqueIdentifier>{74D359C1-DFD0-4B53-BB92-F2EAABB63620}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CPPCourse.Target.cs">
       <Filter>Source</Filter>
@@ -12,8 +12,10 @@
       <Filter>Source</Filter>
     </None>
     <None Include="..\..\.clang-format" />
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{0C752212-F36B-4E86-804A-743903C7DAA1}</UniqueIdentifier>
+      <UniqueIdentifier>{792F0767-144D-44EA-8B08-F505F3AE2D88}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -31,7 +33,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\CPPCourse">
-      <UniqueIdentifier>{0B1C5252-507E-4D30-AC2D-98EA284D14BF}</UniqueIdentifier>
+      <UniqueIdentifier>{75AED6FB-67F7-46AB-988A-D0526EB9F677}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CPPCourse\CPPCourse.Build.cs">
       <Filter>Source\CPPCourse</Filter>
@@ -42,17 +44,23 @@
     <ClInclude Include="..\..\Source\CPPCourse\CPPCourse.h">
       <Filter>Source\CPPCourse</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\CPPCourse\CPPCourseCharacter.cpp">
-      <Filter>Source\CPPCourse</Filter>
+    <Filter Include="Source\CPPCourse\Private">
+      <UniqueIdentifier>{50FACE0F-8E53-4389-8651-ECD2AD7186DB}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\CPPCourse\Private\CourseCharacter.cpp">
+      <Filter>Source\CPPCourse\Private</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\CPPCourse\CPPCourseCharacter.h">
-      <Filter>Source\CPPCourse</Filter>
+    <ClCompile Include="..\..\Source\CPPCourse\Private\CourseGameMode.cpp">
+      <Filter>Source\CPPCourse\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\CPPCourse\Public">
+      <UniqueIdentifier>{9675B01F-F0B5-40B5-AB58-A6D434C178E6}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\CPPCourse\Public\CourseCharacter.h">
+      <Filter>Source\CPPCourse\Public</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\CPPCourse\CPPCourseGameMode.cpp">
-      <Filter>Source\CPPCourse</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\CPPCourse\CPPCourseGameMode.h">
-      <Filter>Source\CPPCourse</Filter>
+    <ClInclude Include="..\..\Source\CPPCourse\Public\CourseGameMode.h">
+      <Filter>Source\CPPCourse\Public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

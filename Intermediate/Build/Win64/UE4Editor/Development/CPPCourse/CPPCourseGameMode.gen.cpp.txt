@@ -1,7 +1,7 @@
 C:\UE\CPPCourse\Intermediate\Build\Win64\UE4Editor\Development\CPPCourse\Definitions.CPPCourse.h
 F:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 F:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\UE\CPPCourse\Source\CPPCourse/CPPCourseGameMode.h
+C:\UE\CPPCourse\Source\CPPCourse/Public/CPPCourseGameMode.h
 F:\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
 F:\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 F:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h

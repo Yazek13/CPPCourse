@@ -32,8 +32,10 @@
 /wd4244
 /wd4838
 /I .
+/I C:\UE\CPPCourse\Source\CPPCourse\Private
 /I C:\UE\CPPCourse\Intermediate\Build\Win64\UE4Editor\Inc\CPPCourse
 /I C:\UE\CPPCourse\Source
+/I C:\UE\CPPCourse\Source\CPPCourse\Public
 /I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
@@ -269,7 +271,7 @@
 /FI"C:\UE\CPPCourse\Intermediate\Build\Win64\CPPCourseEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
 /Yu"C:\UE\CPPCourse\Intermediate\Build\Win64\CPPCourseEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
 /Fp"C:\UE\CPPCourse\Intermediate\Build\Win64\CPPCourseEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"C:\UE\CPPCourse\Source\CPPCourse\CPPCourseCharacter.cpp"
+"C:\UE\CPPCourse\Source\CPPCourse\Private\CPPCourseCharacter.cpp"
 /FI"C:\UE\CPPCourse\Intermediate\Build\Win64\UE4Editor\Development\CPPCourse\Definitions.CPPCourse.h"
 /Fo"C:\UE\CPPCourse\Intermediate\Build\Win64\UE4Editor\Development\CPPCourse\CPPCourseCharacter.cpp.obj"
 /TP

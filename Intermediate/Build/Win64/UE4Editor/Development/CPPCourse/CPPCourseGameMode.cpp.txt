@@ -1,11 +1,11 @@
 C:\UE\CPPCourse\Intermediate\Build\Win64\UE4Editor\Development\CPPCourse\Definitions.CPPCourse.h
-C:\UE\CPPCourse\Source\CPPCourse\CPPCourseGameMode.h
+C:\UE\CPPCourse\Source\CPPCourse\Public\CPPCourseGameMode.h
 F:\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
 F:\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 F:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 F:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
 C:\UE\CPPCourse\Intermediate\Build\Win64\UE4Editor\Inc\CPPCourse\CPPCourseGameMode.generated.h
-C:\UE\CPPCourse\Source\CPPCourse\CPPCourseCharacter.h
+C:\UE\CPPCourse\Source\CPPCourse\Public\CPPCourseCharacter.h
 F:\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
 F:\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
 F:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h

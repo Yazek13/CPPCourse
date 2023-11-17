@@ -1,10 +1,10 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "CPPCourseGameMode.h"
-#include "CPPCourseCharacter.h"
+#include "CourseGameMode.h"
+#include "CourseCharacter.h"
 #include "UObject/ConstructorHelpers.h"
 
-ACPPCourseGameMode::ACPPCourseGameMode()
+ACourseGameMode::ACourseGameMode()
 {
 	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnBPClass(
 		TEXT("/Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter"));
