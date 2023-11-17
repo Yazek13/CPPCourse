@@ -1,2 +1,0 @@
-C:\UE\CPPCourse\Intermediate\Build\Win64\UE4Editor\Development\CPPCourse\Definitions.CPPCourse.h
-C:\UE\CPPCourse\Source\CPPCourse\CPPCourse.h

@@ -7,9 +7,11 @@
 /IGNORE:4221
 /NODEFAULTLIB
 "C:\UE\CPPCourse\Intermediate\Build\Win64\CPPCourseEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\UE\CPPCourse\Intermediate\Build\Win64\UE4Editor\Development\CPPCourse\CourseActor.cpp.obj"
 "C:\UE\CPPCourse\Intermediate\Build\Win64\UE4Editor\Development\CPPCourse\CourseCharacter.cpp.obj"
 "C:\UE\CPPCourse\Intermediate\Build\Win64\UE4Editor\Development\CPPCourse\CourseGameMode.cpp.obj"
 "C:\UE\CPPCourse\Intermediate\Build\Win64\UE4Editor\Development\CPPCourse\CPPCourse.cpp.obj"
+"C:\UE\CPPCourse\Intermediate\Build\Win64\UE4Editor\Development\CPPCourse\CourseActor.gen.cpp.obj"
 "C:\UE\CPPCourse\Intermediate\Build\Win64\UE4Editor\Development\CPPCourse\CourseCharacter.gen.cpp.obj"
 "C:\UE\CPPCourse\Intermediate\Build\Win64\UE4Editor\Development\CPPCourse\CourseGameMode.gen.cpp.obj"
 "C:\UE\CPPCourse\Intermediate\Build\Win64\UE4Editor\Development\CPPCourse\CPPCourse.init.gen.cpp.obj"
