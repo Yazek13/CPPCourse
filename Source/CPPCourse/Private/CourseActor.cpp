@@ -22,10 +22,15 @@ void ACourseActor::BeginPlay()
 
 	GEngine->AddOnScreenDebugMessage(
 		INDEX_NONE, 5.0f, FColor::Red, TEXT("Hello!!!"));
+	GEngine->AddOnScreenDebugMessage(INDEX_NONE, 5.0f, FColor::Green,
+		FString::Printf(TEXT("PlayerStamina = %llu, PlayerHealth = %llu"),
+			PlayerStamina, PlayerHealth));
 }
 
 // Called every frame
 void ACourseActor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	uint8 PlayerHealth = 100;
+	UE_LOG(LogTemp, Error, TEXT("Health = %d"), PlayerHealth);
 }
