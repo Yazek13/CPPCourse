@@ -30,7 +30,9 @@ void ACourseActor::BeginPlay()
 // Called every frame
 void ACourseActor::Tick(float DeltaTime)
 {
+	/*
 	Super::Tick(DeltaTime);
 	uint8 PlayerHealth = 100;
 	UE_LOG(LogTemp, Error, TEXT("Health = %d"), PlayerHealth);
+	*/ 
 }
