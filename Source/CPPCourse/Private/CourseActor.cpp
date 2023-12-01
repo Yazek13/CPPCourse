@@ -4,7 +4,7 @@
 
 ACourseActor::ACourseActor()
 {
-	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bCanEverTick = false;
 	
 	StaticMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT(
 		"StaticMeshComponent"));
@@ -18,7 +18,7 @@ void ACourseActor::OnConstruction(const FTransform& Transform)
 	StaticMeshComponent->SetStaticMesh(StaticMesh);
 	StaticMeshComponent->SetWorldRotation(Rotation);
 }
-// Called when the game starts or when spawned
+
 void ACourseActor::BeginPlay()
 {
 	Super::BeginPlay();
@@ -38,4 +38,8 @@ void ACourseActor::BeginPlay()
 			PlayerStamina, PlayerHealth));
 }
 
+void ACourseActor::Tick(float DeltaTime) 
+{
+	Super::Tick(DeltaTime);
+}
 

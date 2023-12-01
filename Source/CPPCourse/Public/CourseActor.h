@@ -14,7 +14,7 @@ class CPPCOURSE_API ACourseActor : public AActor
 public:
 	ACourseActor();
 	virtual void OnConstruction(const FTransform& Transform) override;
-	//virtual void Tick(float DeltaTime) override;
+	virtual void Tick(float DeltaTime) override;
 
 protected:
 	UPROPERTY()
