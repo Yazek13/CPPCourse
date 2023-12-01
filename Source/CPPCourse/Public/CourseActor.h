@@ -13,7 +13,8 @@ class CPPCOURSE_API ACourseActor : public AActor
 
 public:
 	ACourseActor();
-	virtual void Tick(float DeltaTime) override;
+	virtual void OnConstruction(const FTransform& Transform) override;
+	//virtual void Tick(float DeltaTime) override;
 
 protected:
 	UPROPERTY()
@@ -28,8 +29,11 @@ protected:
 	UPROPERTY(VisibleAnywhere)
 	FString MyText = TEXT("My First Text");
 
-	UPROPERTY(EditDefaultsOnly)
+	UPROPERTY(EditInstanceOnly)
 	UStaticMesh* StaticMesh;
+
+	UPROPERTY(EditInstanceOnly)
+	FRotator Rotation;
 
 
 	virtual void BeginPlay() override;

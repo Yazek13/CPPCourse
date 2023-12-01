@@ -4,9 +4,20 @@
 
 ACourseActor::ACourseActor()
 {
-	PrimaryActorTick.bCanEverTick = false;
+	PrimaryActorTick.bCanEverTick = true;
+	
+	StaticMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT(
+		"StaticMeshComponent"));
+	SetRootComponent(StaticMeshComponent);
 }
 
+void ACourseActor::OnConstruction(const FTransform& Transform) 
+{
+	Super::OnConstruction(Transform);
+	check(StaticMeshComponent);
+	StaticMeshComponent->SetStaticMesh(StaticMesh);
+	StaticMeshComponent->SetWorldRotation(Rotation);
+}
 // Called when the game starts or when spawned
 void ACourseActor::BeginPlay()
 {
@@ -27,12 +38,4 @@ void ACourseActor::BeginPlay()
 			PlayerStamina, PlayerHealth));
 }
 
-// Called every frame
-void ACourseActor::Tick(float DeltaTime)
-{
-	/*
-	Super::Tick(DeltaTime);
-	uint8 PlayerHealth = 100;
-	UE_LOG(LogTemp, Error, TEXT("Health = %d"), PlayerHealth);
-	*/ 
-}
+
