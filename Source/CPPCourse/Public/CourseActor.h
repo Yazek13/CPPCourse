@@ -35,6 +35,8 @@ protected:
 	UPROPERTY(EditInstanceOnly)
 	FRotator Rotation;
 
+	UFUNCTION(BlueprintNativeEvent)
+	void GetMyText();
 
 	virtual void BeginPlay() override;
 };

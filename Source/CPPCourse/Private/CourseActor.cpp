@@ -19,6 +19,11 @@ void ACourseActor::OnConstruction(const FTransform& Transform)
 	StaticMeshComponent->SetWorldRotation(Rotation);
 }
 
+void ACourseActor::GetMyText_Implementation() 
+{
+	UE_LOG(LogTemp, Warning, TEXT("My Function"));
+}
+
 void ACourseActor::BeginPlay()
 {
 	Super::BeginPlay();
@@ -30,12 +35,15 @@ void ACourseActor::BeginPlay()
 	uint8 PlayerStamina = 100;
 	uint32 PlayerCoins = 0;
 	FVector Locations(0.0, 0.0, 0.0);
+	GetMyText();
+	
 
 	GEngine->AddOnScreenDebugMessage(
 		INDEX_NONE, 5.0f, FColor::Red, TEXT("Hello!!!"));
 	GEngine->AddOnScreenDebugMessage(INDEX_NONE, 5.0f, FColor::Green,
 		FString::Printf(TEXT("PlayerStamina = %llu, PlayerHealth = %llu"),
 			PlayerStamina, PlayerHealth));
+	
 }
 
 void ACourseActor::Tick(float DeltaTime) 
