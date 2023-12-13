@@ -6,6 +6,41 @@
 #include "GameFramework/Actor.h"
 #include "CourseActor.generated.h"
 
+USTRUCT(BlueprintType)
+struct FCourseItemInfo
+{
+	GENERATED_BODY()
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Test Var")
+	FName Name;
+
+	UPROPERTY(BlueprintReadOnly)
+	UTexture2D* Texture;
+};
+
+USTRUCT(BlueprintType)
+struct FCourseMeshAndMaterial
+{
+	GENERATED_BODY()
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Test StaticMesh")
+	UStaticMesh* MyStaticMesh;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Test Material")
+	UMaterial* MyMaterial;
+
+	UPROPERTY()
+	UStaticMeshComponent* StaticMeshComponent;
+};
+
+UENUM(BlueprintType)
+enum class ECourseColor : uint8
+{
+	Red = 0,
+	Green,
+	Blue
+};
+
 UCLASS()
 class CPPCOURSE_API ACourseActor : public AActor
 {
@@ -17,6 +52,15 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 protected:
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
+	FCourseItemInfo Info;
+
+	UPROPERTY(EditInstanceOnly)
+	FCourseMeshAndMaterial MeshAndMaterial;
+	
+	UPROPERTY(EditDefaultsOnly)
+	ECourseColor Color;
+	
 	UPROPERTY()
 	UStaticMeshComponent* StaticMeshComponent;
 

@@ -11,12 +11,13 @@ ACourseActor::ACourseActor()
 	SetRootComponent(StaticMeshComponent);
 }
 
-void ACourseActor::OnConstruction(const FTransform& Transform) 
+void ACourseActor::OnConstruction(const FTransform& Transform)
 {
 	Super::OnConstruction(Transform);
 	check(StaticMeshComponent);
 	StaticMeshComponent->SetStaticMesh(StaticMesh);
 	StaticMeshComponent->SetWorldRotation(Rotation);
+	//StaticMeshComponent->SetMaterial();
 }
 
 void ACourseActor::GetMyText_Implementation() 
@@ -36,7 +37,6 @@ void ACourseActor::BeginPlay()
 	uint32 PlayerCoins = 0;
 	FVector Locations(0.0, 0.0, 0.0);
 	GetMyText();
-	
 
 	GEngine->AddOnScreenDebugMessage(
 		INDEX_NONE, 5.0f, FColor::Red, TEXT("Hello!!!"));
